@@ -1,13 +1,13 @@
 // import * as cdk from 'aws-cdk-lib';
 // import { Template } from 'aws-cdk-lib/assertions';
-// import * as Cloudbuild from '../lib/cloudbuild-stack';
+// import * as Stacks from '../lib/stacks-stack';
 
 // example test. To run these tests, uncomment this file along with the
-// example resource in lib/cloudbuild-stack.ts
+// example resource in lib/stacks-stack.ts
 test('SQS Queue Created', () => {
 //   const app = new cdk.App();
 //     // WHEN
-//   const stack = new Cloudbuild.CloudbuildStack(app, 'MyTestStack');
+//   const stack = new Stacks.StacksStack(app, 'MyTestStack');
 //     // THEN
 //   const template = Template.fromStack(stack);
 

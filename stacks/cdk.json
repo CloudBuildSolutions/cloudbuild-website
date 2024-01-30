@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node --prefer-ts-exts bin/cloudbuild.ts",
+  "app": "npx ts-node --prefer-ts-exts bin/stacks.ts",
   "watch": {
     "include": [
       "**"
