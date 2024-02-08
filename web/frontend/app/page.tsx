@@ -71,9 +71,11 @@ export default function Home() {
         headerRef?.classList.add('h-[90px]');
         headerRef?.classList.add('md:h-[160px]');
 
+        headerLogoRef?.classList.add('w-[250px]');
         headerLogoRef?.classList.add('md:w-[360px]');
-        headerLogoRef?.classList.remove('md:w-[600px]');
 
+        headerLogoRef?.classList.remove('w-[300px]');
+        headerLogoRef?.classList.remove('md:w-[600px]');
         headerLogoRef?.classList.remove('lg:w-[800px]');
 
         setMenuTriggerColor('text-red-700');
@@ -85,9 +87,11 @@ export default function Home() {
         headerRef?.classList.remove('bg-white');
         headerRef?.classList.remove('h-[90px]');
 
+        headerLogoRef?.classList.remove('w-[250px]');
         headerLogoRef?.classList.remove('md:w-[360px]');
         headerLogoRef?.classList.add('md:w-[600px]');
 
+        headerLogoRef?.classList.add('w-[300px]');
         headerLogoRef?.classList.remove('w-[400px]');
         headerLogoRef?.classList.add('w-[800px]');
 
@@ -159,7 +163,7 @@ export default function Home() {
       </nav>
 
       <header id="header" className="flex flex-row justify-center fixed top-0 z-30 w-full transition-all duration-300">
-        <div id="header-logo" className="w-[260px] md:w-[600px] lg:w-[800px] h-auto my-2 md:my-10 transition-all duration-300">
+        <div id="header-logo" className="w-[300px] md:w-[600px] lg:w-[800px] h-auto my-3 md:my-10 transition-all duration-300">
           <a href="#">
             <Image id="header-logo-white" className="drop-shadow-lg"
               src="/images/cloudbuild-logo-white-transperant.svg"
@@ -173,9 +177,9 @@ export default function Home() {
 
       <section className="lg:h-20"></section> 
 
-      <section className="relative flex flex-col space-y-8 md:space-y-24 items-center justify-center w-full h-screen basis-auto">
+      <section className="relative flex flex-col mt-16 space-y-8 md:space-y-24 items-center justify-center w-full h-screen basis-auto">
         <h1 className={cn(tenorFont.className, "w-10/12 text-center text-white text-4xl md:text-5xl lg:text-7xl drop-shadow-md")}>
-          Redefining Cloud Solution Architecture for the Agile Enterprise</h1>
+          Redefining Cloud Solutions for the Agile Enterprise</h1>
         <h3 className={cn(interFont.className, "w-10/12 text-center text-white font-bold text-2xl md:text-3xl lg:text-4xl drop-shadow-md")}>
           Monthly cloud architecture subscriptions for every business. <strong className="font-extrabold">
           Get started for FREE for 30 Days.</strong> Pause or Cancel at anytime.
