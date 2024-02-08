@@ -465,7 +465,7 @@ export default function Home() {
                 Who are the Solution Architects?
               </h4>
               <p>
-                You might be surprised to hear this, but Cloud Build is actually consulting firm of one. This means you'll work directly with me, founder of Cloud Build LLC.  However, I have a network of designers and engineers we bring into projects from time to time when needed.
+                You might be surprised to hear this, but Cloud Build is actually consulting firm of one. This means you will work directly with me, founder of Cloud Build LLC.  However, I have a network of designers and engineers we bring into projects from time to time when needed.
               </p>
             </div>
 
