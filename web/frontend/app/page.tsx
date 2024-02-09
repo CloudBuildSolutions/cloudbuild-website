@@ -177,7 +177,7 @@ export default function Home() {
 
       <section className="lg:h-20"></section> 
 
-      <section className="relative flex flex-col mt-16 space-y-8 md:space-y-24 items-center justify-center w-full h-screen basis-auto">
+      <section className="relative flex flex-col mt-16 md:mt-6 space-y-8 md:space-y-16 items-center justify-center w-full h-screen basis-auto">
         <h1 className={cn(tenorFont.className, "w-10/12 text-center text-white text-4xl md:text-5xl lg:text-7xl drop-shadow-md")}>
           Redefining Cloud Solutions for the Agile Enterprise</h1>
         <h3 className={cn(interFont.className, "w-10/12 text-center text-white font-bold text-2xl md:text-3xl lg:text-4xl drop-shadow-md")}>
@@ -308,9 +308,11 @@ export default function Home() {
           <ul className={cn(interFont.className, "w-full text-center text-white text-xl md:text-2xl font-extrabold drop-shadow")}>
             <li>Serverless Applications</li>
             <li>Containerization</li>
+            <li>Load Balancing</li>
             <li>Database Design</li>
             <li>Infrastructure as Code</li>
             <li>Data Lake Formation</li>
+            <li>CDK and CloudFormation</li>
             <li>CI/CD Workflows</li>
             <li>Data Migration and Backup</li>
             <li>UI and UX Design</li>
@@ -345,7 +347,7 @@ export default function Home() {
                 <li>A/B User Testing</li>
                 <li>Weekly Stand Ups</li>
                 <li>Jira Projects</li>
-                <li>One task at a time</li>
+                <li>Single task deliverables</li>
                 <li>1 to 2 week sprints</li>
                 <li>Easy monthly payments</li>
                 <li>Pause or cancel anytime</li>
@@ -369,10 +371,10 @@ export default function Home() {
                 <li>Serverless Applications</li>
                 <li>NoSQL and SQL DB</li>
                 <li>React and Next.js</li>
-                <li>Mobile Dev with Expo</li>
-                <li>Python/Typescript API</li>
+                <li>iOS and Android w/Expo</li>
+                <li>Python/Typescript APIs</li>
                 <li>CDN Distributions</li>
-                <li>CDK and Formation</li>
+                <li>CDK and CloudFormation</li>
                 <li>Debugging and Testing</li>
                 <li>Everything in Designer</li>
                 <li>Pause or cancel anytime</li>
@@ -395,7 +397,7 @@ export default function Home() {
               <ul>
                 <li>Infrastructure Design</li>
                 <li>AWS Account Config</li>
-                <li>Cost Optimiziations</li>
+                <li>Cost Optimizations</li>
                 <li>Security Analysis</li>
                 <li>CI/CD Deployments</li>
                 <li>Data Migration</li>
@@ -438,7 +440,7 @@ export default function Home() {
                 How do I add and manage Tasks
               </h4>
               <p>
-                We offer a ton of flexibility in how you request tasks using Jira. Some common ways clients request designs is directly via Jira, sharing Google docs, or Figma projects, or even recording a brief Loom video (for those who prefer not to write their briefs out). All tasks are organized into 1 to 2 week sprints. You will be able to see the status of each tasks and receive weekly standup up dates during the sprints.  
+                We offer a ton of flexibility in how you request tasks using Jira. Some common ways clients request tasks is directly via Jira, sharing Google docs, or Figma projects, sharing whiteboards, a weekly Zoom meeting, or even recording a brief video (for those who prefer not to write their briefs out). All tasks are organized into 1 to 2 week sprints. You will be able to see the status of each tasks and receive weekly updates during the sprints.  
               </p>
             </div>
 
@@ -447,7 +449,16 @@ export default function Home() {
                 How does the pause feature work?
               </h4>
               <p>
-                We understand you may not have enough work to fill up entire month. Perhaps you only have one or two tasks at the moment. That is where pausing your subscription comes in handy. Billing cycles are based on 31 day period. For example, you sign up and use the service for 21 days, and then decideto pause your subscription. This means that the billing cycle will be paused and you will have 10 days of service remaining to be used anytime in the future.
+                We understand you may not have enough work to fill up entire month. Perhaps you only have one or two tasks at the moment. That is where pausing your subscription comes in handy. Billing cycles are based on 31 day period. For example, you sign up and use the service for 21 days, and then decide to pause your subscription. This means that the billing cycle will be paused and you will have 10 days of service remaining to be used anytime in the future.
+              </p>
+            </div>
+
+            <div className="border-2 border-red-500 bg-red-700 rounded-md p-4 space-y-4">
+              <h4 className="text-xl font-extrabold">
+                Are there any refunds if I do not like the service?
+              </h4>
+              <p>
+                Due to the professional nature of the work, there will be no refunds issued. However, there is no upfront or charge during the first 30 days of the subscription.  You can cancel before end of the first 30 days and will not be charged. 
               </p>
             </div>
 
@@ -461,6 +472,8 @@ export default function Home() {
               </h4>
               <p>
                 Yes, you will not be charged until the end of the first 30 days.  During the first 30 days, if you are not satisfied with the service provided you can cancel before the end of the 30 days and not be charged. You can expect to have multiple tasks and 1 to 2 sprints completed within the first month of service. 
+
+                <strong className="font-extrabold">However, in order for us to start working together, you will need to provide a card for future payment. Your card will not be charged until after 30 days.</strong> 
               </p>
             </div>
 
@@ -469,7 +482,7 @@ export default function Home() {
                 Who are the Solution Architects?
               </h4>
               <p>
-                You might be surprised to hear this, but Cloud Build is actually consulting firm of one. This means you will work directly with me, founder of Cloud Build LLC.  However, I have a network of designers and engineers we bring into projects from time to time when needed.
+                You might be surprised to hear this, but Cloud Build Solutions is actually a consulting firm of one. This means you will work directly with me, founder of Cloud Build LLC. I have over 15 years of experience leading teams to design and develop web applications on a variety of cloud platforms. I have an MFA from Savannah College of Art and Design. The design of the User Interface and the User Experience for the end user is almost as important to me as the technical implementation. I also have a network of designers and engineers we bring into projects from time to time when needed.
               </p>
             </div>
 
@@ -491,15 +504,6 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="border-2 border-red-500 bg-red-700 rounded-md p-4 space-y-4">
-              <h4 className="text-xl font-extrabold">
-                Are there any refunds if I do not like the service?
-              </h4>
-              <p>
-                Due to the high quality nature of the work, there will be no refunds issued. However, there is no upfront or charge during the first 30 days of the subscrition.  You can cancel before end of the first 30 days and will not be charged. 
-              </p>
-            </div>
-
           </div>
         </div>
 
@@ -509,10 +513,10 @@ export default function Home() {
 
       <section className="relative flex flex-col space-y-16 md:space-y-24 lg:mt-2 justify-center items-center w-full min-h-screen basis-auto">
         <h2 className={cn(tenorFont.className, "w-10/12 md:w-8/12 text-center text-white text-4xl md:text-6xl drop-shadow-md")}>
-          See if Cloud Build is right for your enterprise (It totally is.)
+          See if Cloud Build is right for your enterprise (It totally is)
         </h2>
         <h3 className={cn(interFont.className, "w-10/12 md:w-8/12 text-center text-white text-2xl md:text-3xl drop-shadow-md")}>
-          Get a guided tour through the Cloud Build process, and find out how you and your team can change the way you build your cloud infrastructures and applications, forever.
+          Get a guided tour through the Cloud Build process, and find out how you and your team can change the way you build your cloud infrastructure and applications, forever.
         </h3>
         <Button asChild variant="secondary" className="text-2xl md:text-4xl p-4 md:p-10 text-red-700">
           <a href="mailto:hello@cloudbuild.co">Get Started Today</a>
