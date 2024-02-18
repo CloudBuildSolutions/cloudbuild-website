@@ -35,7 +35,8 @@ import {
   Power,
   MoveDown,
   Hand,
-  Move
+  Settings,
+  Waypoints
 } from "lucide-react";
 
 
@@ -63,7 +64,8 @@ export default function Home() {
     const headerLogoWhiteImageRef = document.getElementById("header-logo-white");
 
     window.onscroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 150) {
+        console.log(window.scrollY);
         headerLogoWhiteImageRef?.classList.add('hidden');
         headerLogoRedImageRef?.classList.remove('hidden');
 
@@ -87,13 +89,12 @@ export default function Home() {
         headerRef?.classList.remove('bg-white');
         headerRef?.classList.remove('h-[90px]');
 
+        headerLogoRef?.classList.add('w-[300px]');
+        headerLogoRef?.classList.add('md:w-[600px]');
+        headerLogoRef?.classList.add('lg:w-[800px]');
+
         headerLogoRef?.classList.remove('w-[250px]');
         headerLogoRef?.classList.remove('md:w-[360px]');
-        headerLogoRef?.classList.add('md:w-[600px]');
-
-        headerLogoRef?.classList.add('w-[300px]');
-        headerLogoRef?.classList.remove('w-[400px]');
-        headerLogoRef?.classList.add('w-[800px]');
 
         setMenuTriggerColor('text-white');
       }
@@ -147,6 +148,18 @@ export default function Home() {
                     <span>Get Started</span>
                   </a>
                 </SheetClose>
+                <SheetClose asChild>
+                  <a className="flex flex-row gap-x-2 items-center" href="https://cloudbuild.atlassian.net/">
+                    <Waypoints /> 
+                    <span>Project Management</span>
+                  </a>
+                </SheetClose>
+                <SheetClose asChild>
+                  <a className="flex flex-row gap-x-2 items-center" href="https://billing.stripe.com/p/login/dR6cNN6Fb29Bbmg000">
+                    <Settings /> 
+                    <span>Manage Subscription</span>
+                  </a>
+                </SheetClose>
               </SheetDescription>
             </SheetHeader>
           </SheetContent>
@@ -175,23 +188,38 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="lg:h-20"></section> 
+      <section className="relative overflow-x-clip overscroll-y-none flex flex-col mt-0 space-y-8 md:space-y-16 items-center justify-center w-full h-screen basis-auto">
 
-      <section className="relative flex flex-col mt-16 md:mt-6 space-y-8 md:space-y-16 items-center justify-center w-full h-screen basis-auto">
-        <h1 className={cn(tenorFont.className, "w-10/12 text-center text-white text-4xl md:text-5xl lg:text-7xl drop-shadow-md")}>
+        <Image className="absolute top-0 left-0 translate-y-[40px] md:translate-y-[0px] lg:translate-y-[-200px] translate-x-[-100px] md:translate-x-[-200px] lg:translate-x-[-500px] w-[3000px] z-0"
+          src="/images/real-cloud-5.svg"
+          alt="Background Cloud 1" width="165" height="120" />
+
+        <h1 className={cn(tenorFont.className, "w-10/12 text-center text-white text-4xl md:text-5xl lg:text-7xl drop-shadow-xl")}>
           Redefining Cloud Solutions for the Agile Enterprise</h1>
         <h3 className={cn(interFont.className, "w-10/12 text-center text-white font-bold text-2xl md:text-3xl lg:text-4xl drop-shadow-md")}>
           Monthly cloud architecture subscriptions for every business. <strong className="font-extrabold">
           Get started for FREE for 30 Days.</strong> Pause or Cancel at anytime.
         </h3>
-        <a href="#welcome">
+        <a href="#welcome" className="z-10">
           <MoveDown strokeWidth={2} size={64} className="animate-bounce text-white drop-shadow-md"/>
         </a>
+
+        <Image className="absolute bottom-0 right-0 translate-x-[100px] translate-y-[100px] md:translate-x-[300px] md:translate-y-[200px] w-[1000px] z-0"
+          src="/images/real-cloud-1.svg"
+          alt="Background Cloud 1" width="165" height="120" />
+
       </section>
 
       <section id="welcome" className="h-20"></section> 
 
-      <section className="relative flex flex-col mt-8 md:mt-[-40px] md:space-y-16 lg:space-y-4 items-center justify-center w-full min-h-screen basis-auto">
+      <section className="relative overflow-x-hidden flex flex-col mt-8 md:mt-[-40px] md:space-y-16 lg:space-y-4 items-center justify-center w-full min-h-screen basis-auto">
+
+        {/*
+        <Image className="invisible md:visible absolute top-[3rem] md:top-[0rem] lg:top-[-6rem] left-[-6rem] md:left-[-20rem] w-[3000px] z-0"
+          src="/images/real-cloud-4.svg"
+          alt="Background Cloud 1" width="165" height="120" />
+          */}
+
         <h2 className={cn(tenorFont.className, "w-10/12 text-center text-white text-4xl md:text-5xl lg:text-6xl drop-shadow-md")}>
           We are your cloud native concierge on your serverless cloud journey
         </h2>
@@ -202,18 +230,25 @@ export default function Home() {
           />
           <IconBlock 
             icon="package-open" 
-            label="Receive solutions within 1 to 2 business days, from Monday to Friday" 
+            label="Receive solutions within 1 to 2 week sprints, from Monday to Friday" 
           />
           <IconBlock 
             icon="list-checks" 
             label="We are with you at every step of the process from design to development" 
           />
         </div>
+
+        {/*
+        <Image className="invisible md:visible absolute bottom-[-1rem] right-[0rem] w-[2000px] z-0"
+          src="/images/real-cloud-6.svg"
+          alt="Background Cloud 1" width="165" height="120" />
+          */}
+
       </section>
 
       <section className="h-20"></section> 
 
-      <section className="relative flex flex-col space-y-8 lg:space-y-16 justify-center items-center w-full min-h-screen">
+      <section className="bg-[url('/images/real-cloud-10.svg')] bg-cover bg-center relative flex flex-col space-y-8 lg:space-y-16 justify-center items-center w-full min-h-screen">
         <h2 className={cn(tenorFont.className, "w-10/12 text-center text-white text-4xl lg:text-6xl drop-shadow-md")}>
           This is the kind of architecture upgrade to optimize and elevate your business to new heights
         </h2>
@@ -295,30 +330,32 @@ export default function Home() {
 
       <section id="solutions" className="h-20"></section> 
 
-      <section className="relative flex flex-col md:flex-row gap-y-8 justify-center items-center w-10/12 min-h-screen">
-        <div className="w-full md:w-5/12 text-white">
+      <section className="bg-[url('/images/real-cloud-11.svg')] bg-cover bg-center relative flex flex-col md:flex-row gap-y-8 justify-center items-center w-full min-h-screen">
+        <div className="flex w-full md:w-10/12 flex-col md:flex-row gap-y-8 justify-center items-center">
+          <div className="w-full md:w-6/12 text-white">
             <Image className="drop-shadow-lg"
               src="/images/nodes-to-circle.svg"
               alt="Nodes to Circle Illustration" width="600" height="600" />
-        </div>
-        <div className="w-full md:w-7/12 space-y-8">
-          <h3 className={cn(tenorFont.className, "w-full text-center text-white text-4xl md:text-4xl lg:text-6xl drop-shadow-md")}>
-            Types of Solutions We Provide on the AWS Cloud
-          </h3>
-          <ul className={cn(interFont.className, "w-full text-center text-white text-xl md:text-2xl font-extrabold drop-shadow")}>
-            <li>Serverless Applications</li>
-            <li>Containerization</li>
-            <li>Load Balancing</li>
-            <li>Database Design</li>
-            <li>Infrastructure as Code</li>
-            <li>Data Lake Formation</li>
-            <li>CDK and CloudFormation</li>
-            <li>CI/CD Workflows</li>
-            <li>Data Migration and Backup</li>
-            <li>UI and UX Design</li>
-            <li>Web and Mobile Design</li>
-            <li>Legacy to Cloud Conversions</li>
-          </ul>
+          </div>
+          <div className="w-full md:w-6/12 space-y-8">
+            <h3 className={cn(tenorFont.className, "w-full text-center text-white text-4xl md:text-4xl lg:text-6xl drop-shadow-md")}>
+              Types of Solutions We Provide on the AWS Cloud
+            </h3>
+            <ul className={cn(interFont.className, "w-full text-center text-white text-xl md:text-2xl font-extrabold drop-shadow")}>
+              <li>Serverless Applications</li>
+              <li>Containerization</li>
+              <li>Load Balancing</li>
+              <li>Database Design</li>
+              <li>Infrastructure as Code</li>
+              <li>Data Lake Formation</li>
+              <li>CDK and CloudFormation</li>
+              <li>CI/CD Workflows</li>
+              <li>Data Migration and Backup</li>
+              <li>UI and UX Design</li>
+              <li>Web and Mobile Design</li>
+              <li>Legacy to Cloud Conversions</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -333,11 +370,11 @@ export default function Home() {
           <Card className="w-72 md:w-60 lg:w-72">
             <CardHeader>
               <CardTitle className="text-center text-3xl">Designer</CardTitle>
-              <CardDescription className="text-center text-xl">$2,999/m</CardDescription>
+              <CardDescription className="text-center text-xl">$4,999/m</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col space-y-4">
               <Button asChild>
-                <a href="mailto:hello@cloudbuild.co">Get Started</a>
+                <a href="https://buy.stripe.com/eVa16e8MSepi4pO4gg">Get Started</a>
               </Button> 
               <h4 className="font-extrabold w-full">Services Included:</h4>
               <ul>
@@ -360,11 +397,11 @@ export default function Home() {
           <Card className="w-72 md:w-60 lg:w-72">
             <CardHeader>
               <CardTitle className="text-center text-3xl">Developer</CardTitle>
-              <CardDescription className="text-center text-xl">$4,999/m</CardDescription>
+              <CardDescription className="text-center text-xl">$7,999/m</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col space-y-4">
               <Button asChild>
-                <a href="mailto:hello@cloudbuild.co">Get Started</a>
+                <a href="https://buy.stripe.com/3cs02aaV0gxqg8wbIJ">Get Started</a>
               </Button> 
               <h4 className="font-extrabold w-full">Services Included:</h4>
               <ul>
@@ -387,11 +424,11 @@ export default function Home() {
           <Card className="w-72 md:w-60 lg:w-72">
             <CardHeader>
               <CardTitle className="text-center text-3xl">Architect</CardTitle>
-              <CardDescription className="text-center text-xl">$6,999/m</CardDescription>
+              <CardDescription className="text-center text-xl">$9,999/m</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col space-y-4">
               <Button asChild>
-                <a href="mailto:hello@cloudbuild.co">Get Started</a>
+                <a href="https://buy.stripe.com/00gcOW5AG3KEcWkbIK">Get Started</a>
               </Button> 
               <h4 className="font-extrabold w-full">Services Included:</h4>
               <ul>
@@ -482,7 +519,7 @@ export default function Home() {
                 Who are the Solution Architects?
               </h4>
               <p>
-                You might be surprised to hear this, but Cloud Build Solutions is actually a consulting firm of one. This means you will work directly with me, founder of Cloud Build LLC. I have over 15 years of experience leading teams to design and develop web applications on a variety of cloud platforms. I have an MFA from Savannah College of Art and Design. The design of the User Interface and the User Experience for the end user is almost as important to me as the technical implementation. I also have a network of designers and engineers we bring into projects from time to time when needed.
+                You might be surprised to hear this, but Cloud Build Solutions is actually a consulting firm of one. This means you will work directly with me, founder of Cloud Build LLC. I have over 15 years of experience leading teams to design and develop web applications on a variety of cloud platforms. The design of the User Interface and the User Experience for the end user is as important to me as the technical implementation. I also have a network of designers and engineers we bring into projects from time to time when needed.
               </p>
             </div>
 
@@ -511,7 +548,7 @@ export default function Home() {
 
       <section id="get-started" className="h-20"></section> 
 
-      <section className="relative flex flex-col space-y-16 md:space-y-24 lg:mt-2 justify-center items-center w-full min-h-screen basis-auto">
+      <section className="bg-[url('/images/real-cloud-11.svg')] bg-cover bg-center relative flex flex-col space-y-16 md:space-y-24 lg:mt-2 justify-center items-center w-full min-h-screen basis-auto">
         <h2 className={cn(tenorFont.className, "w-10/12 md:w-8/12 text-center text-white text-4xl md:text-6xl drop-shadow-md")}>
           See if Cloud Build is right for your enterprise (It totally is)
         </h2>
@@ -519,7 +556,7 @@ export default function Home() {
           Get a guided tour through the Cloud Build process, and find out how you and your team can change the way you build your cloud infrastructure and applications, forever.
         </h3>
         <Button asChild variant="secondary" className="text-2xl md:text-4xl p-4 md:p-10 text-red-700">
-          <a href="mailto:hello@cloudbuild.co">Get Started Today</a>
+          <a href="https://buy.stripe.com/00gcOW5AG3KEcWkbIK">Get Started Today</a>
         </Button>
       </section>
 
