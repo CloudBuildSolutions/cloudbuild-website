@@ -78,7 +78,7 @@ export default function Home() {
 
         headerLogoRef?.classList.remove('w-[300px]');
         headerLogoRef?.classList.remove('md:w-[600px]');
-        headerLogoRef?.classList.remove('lg:w-[800px]');
+        headerLogoRef?.classList.remove('lg:w-[700px]');
 
         setMenuTriggerColor('text-red-700');
       }
@@ -91,7 +91,7 @@ export default function Home() {
 
         headerLogoRef?.classList.add('w-[300px]');
         headerLogoRef?.classList.add('md:w-[600px]');
-        headerLogoRef?.classList.add('lg:w-[800px]');
+        headerLogoRef?.classList.add('lg:w-[700px]');
 
         headerLogoRef?.classList.remove('w-[250px]');
         headerLogoRef?.classList.remove('md:w-[360px]');
@@ -176,7 +176,7 @@ export default function Home() {
       </nav>
 
       <header id="header" className="flex flex-row justify-center fixed top-0 z-30 w-full transition-all duration-300">
-        <div id="header-logo" className="w-[300px] md:w-[600px] lg:w-[800px] h-auto my-3 md:my-10 transition-all duration-300">
+        <div id="header-logo" className="w-[300px] md:w-[600px] lg:w-[700px] h-auto my-3 md:my-10 transition-all duration-300">
           <a href="#">
             <Image id="header-logo-white" className="drop-shadow-lg"
               src="/images/cloudbuild-logo-white-transperant.svg"
@@ -188,17 +188,17 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="relative overflow-x-clip overscroll-y-none flex flex-col mt-0 space-y-8 md:space-y-16 items-center justify-center w-full h-screen basis-auto">
+      <section className="relative overflow-x-clip overscroll-y-none flex flex-col mt-0 space-y-8 md:space-y-16 lg:space-y-12 items-center justify-center w-full h-screen basis-auto">
 
         <Image className="absolute top-0 left-0 translate-y-[40px] md:translate-y-[0px] lg:translate-y-[-200px] translate-x-[-100px] md:translate-x-[-200px] lg:translate-x-[-500px] w-[3000px] z-0"
           src="/images/real-cloud-5.svg"
           alt="Background Cloud 1" width="165" height="120" />
 
-        <h1 className={cn(tenorFont.className, "w-10/12 text-center text-white text-4xl md:text-5xl lg:text-7xl drop-shadow-xl")}>
+        <h1 className={cn(tenorFont.className, "w-10/12 lg:w-6/12 text-center text-white text-4xl md:text-5xl lg:text-6xl drop-shadow-xl")}>
           Redefining Cloud Solutions for the Agile Enterprise</h1>
-        <h3 className={cn(interFont.className, "w-10/12 text-center text-white font-bold text-2xl md:text-3xl lg:text-4xl drop-shadow-md")}>
-          Monthly cloud architecture subscriptions for every business. <strong className="font-extrabold">
-          Get started for FREE for 30 Days.</strong> Pause or Cancel at anytime.
+        <h3 className={cn(interFont.className, "w-10/12 lg:w-6/12 text-center text-white font-bold text-2xl md:text-3xl lg:text-4xl drop-shadow-md")}>
+          We provide monthly cloud architecture subscriptions for every business.<strong className="font-extrabold">
+          <br /><br />Get started today for free</strong><br />Pause or Cancel at anytime
         </h3>
         <a href="#welcome" className="z-10">
           <MoveDown strokeWidth={2} size={64} className="animate-bounce text-white drop-shadow-md"/>
@@ -221,7 +221,7 @@ export default function Home() {
           */}
 
         <h2 className={cn(tenorFont.className, "w-10/12 text-center text-white text-4xl md:text-5xl lg:text-6xl drop-shadow-md")}>
-          We are your cloud native concierge on your serverless cloud journey
+          We are your AWS certified concierge on your cloud architecture journey
         </h2>
         <div className="flex flex-col md:flex-row items-center md:justify-around w-10/12">
           <IconBlock 
@@ -330,7 +330,7 @@ export default function Home() {
 
       <section id="solutions" className="h-20"></section> 
 
-      <section className="bg-[url('/images/real-cloud-11.svg')] bg-cover bg-center relative flex flex-col md:flex-row gap-y-8 justify-center items-center w-full min-h-screen">
+      <section className="relative flex flex-col md:flex-row gap-y-8 justify-center items-center w-full min-h-screen">
         <div className="flex w-full md:w-10/12 flex-col md:flex-row gap-y-8 justify-center items-center">
           <div className="w-full md:w-6/12 text-white">
             <Image className="drop-shadow-lg"
@@ -374,8 +374,12 @@ export default function Home() {
             </CardHeader>
             <CardContent className="flex flex-col space-y-4">
               <Button asChild>
-                <a href="https://buy.stripe.com/eVa16e8MSepi4pO4gg">Get Started</a>
+                <a href="https://buy.stripe.com/eVa16e8MSepi4pO4gg">Subscribe</a>
               </Button> 
+              <a className="w-full text-center underline text-blue-500" 
+                 href="https://calendly.com/cloudbuild/intro">
+                Schedule a Call to Learn More
+              </a>
               <h4 className="font-extrabold w-full">Services Included:</h4>
               <ul>
                 <li>UI/UX Figma Prototyping</li>
@@ -401,8 +405,12 @@ export default function Home() {
             </CardHeader>
             <CardContent className="flex flex-col space-y-4">
               <Button asChild>
-                <a href="https://buy.stripe.com/3cs02aaV0gxqg8wbIJ">Get Started</a>
+                <a href="https://buy.stripe.com/3cs02aaV0gxqg8wbIJ">Subscribe</a>
               </Button> 
+              <a className="w-full text-center underline text-blue-500" 
+                 href="https://calendly.com/cloudbuild/intro">
+                Schedule a Call to Learn More
+              </a>
               <h4 className="font-extrabold w-full">Services Included:</h4>
               <ul>
                 <li>Serverless Applications</li>
@@ -428,8 +436,12 @@ export default function Home() {
             </CardHeader>
             <CardContent className="flex flex-col space-y-4">
               <Button asChild>
-                <a href="https://buy.stripe.com/00gcOW5AG3KEcWkbIK">Get Started</a>
+                <a href="https://buy.stripe.com/00gcOW5AG3KEcWkbIK">Subscribe</a>
               </Button> 
+              <a className="w-full text-center underline text-blue-500" 
+                 href="https://calendly.com/cloudbuild/intro">
+                Schedule a Call to Learn More
+              </a>
               <h4 className="font-extrabold w-full">Services Included:</h4>
               <ul>
                 <li>Infrastructure Design</li>
@@ -519,7 +531,7 @@ export default function Home() {
                 Who are the Solution Architects?
               </h4>
               <p>
-                You might be surprised to hear this, but Cloud Build Solutions is actually a consulting firm of one. This means you will work directly with me, founder of Cloud Build LLC. I have over 15 years of experience leading teams to design and develop web applications on a variety of cloud platforms. The design of the User Interface and the User Experience for the end user is as important to me as the technical implementation. I also have a network of designers and engineers we bring into projects from time to time when needed.
+                You might be surprised to hear this, but Cloud Build Solutions is actually a consulting firm of one. This means you will work directly with me, founder of Cloud Build LLC. I am a AWS certified Solutions Architect.  I have over 15 years of experience leading teams to design and develop web applications on a variety of cloud platforms. The design of the User Interface and the User Experience for the end user is as important to me as the technical implementation. I also have a network of designers and engineers we bring into projects from time to time when needed.
               </p>
             </div>
 
@@ -550,13 +562,13 @@ export default function Home() {
 
       <section className="bg-[url('/images/real-cloud-11.svg')] bg-cover bg-center relative flex flex-col space-y-16 md:space-y-24 lg:mt-2 justify-center items-center w-full min-h-screen basis-auto">
         <h2 className={cn(tenorFont.className, "w-10/12 md:w-8/12 text-center text-white text-4xl md:text-6xl drop-shadow-md")}>
-          See if Cloud Build is right for your enterprise (It totally is)
+          See if Cloud Build is right for your enterprise.
         </h2>
         <h3 className={cn(interFont.className, "w-10/12 md:w-8/12 text-center text-white text-2xl md:text-3xl drop-shadow-md")}>
           Get a guided tour through the Cloud Build process, and find out how you and your team can change the way you build your cloud infrastructure and applications, forever.
         </h3>
         <Button asChild variant="secondary" className="text-2xl md:text-4xl p-4 md:p-10 text-red-700">
-          <a href="https://buy.stripe.com/00gcOW5AG3KEcWkbIK">Get Started Today</a>
+          <a href="https://calendly.com/cloudbuild/intro">Let&apos;s Schedule a Call</a>
         </Button>
       </section>
 
