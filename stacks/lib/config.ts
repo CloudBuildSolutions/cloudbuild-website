@@ -15,7 +15,7 @@ export type ConfigProps = {
 };
 
 export const getConfig = (): ConfigProps => ({
-  REGION: process.env.REGION || "use-east-1",
+  REGION: process.env.REGION || "us-east-1",
   ACCOUNT: process.env.ACCOUNT || "",
   DOMAIN: process.env.DOMAIN || "",
   DOMAIN_ALT: process.env.DOMAIN_ALT || "",
