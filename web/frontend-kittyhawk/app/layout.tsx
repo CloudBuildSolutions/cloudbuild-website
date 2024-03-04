@@ -23,7 +23,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={cn(interFont.className, "bg-gradient-to-r from-red-700 via-red-500 to-red-700")}>{children}</body>
+      <body className={cn(interFont.className, "")}>{children}</body>
     </html>
   );
 }

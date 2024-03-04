@@ -188,17 +188,16 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="relative overflow-x-clip overscroll-y-none flex flex-col mt-0 space-y-8 md:space-y-16 lg:space-y-12 items-center justify-center w-full h-screen basis-auto">
+      <section className="bg-gradient-to-tr from-blue-700 to-sky-500 relative overflow-x-clip flex flex-col mt-0 space-y-8 md:space-y-16 lg:space-y-12 items-center justify-center w-full h-screen basis-auto">
 
         <Image className="absolute top-0 left-0 translate-y-[40px] md:translate-y-[0px] lg:translate-y-[-200px] translate-x-[-100px] md:translate-x-[-200px] lg:translate-x-[-500px] w-[3000px] z-0"
           src="/images/real-cloud-5.svg"
           alt="Background Cloud 1" width="165" height="120" />
 
         <h1 className={cn(tenorFont.className, "w-10/12 lg:w-6/12 text-center text-white text-4xl md:text-5xl lg:text-6xl drop-shadow-xl")}>
-          Redefining Cloud Solutions for the Agile Enterprise</h1>
+          Cloud application development for fast moving companies.</h1>
         <h3 className={cn(interFont.className, "w-10/12 lg:w-6/12 text-center text-white font-bold text-2xl md:text-3xl lg:text-4xl drop-shadow-md")}>
-          We provide monthly cloud architecture subscriptions for every business.<strong className="font-extrabold">
-          <br /><br />Get started today for free</strong><br />Pause or Cancel at anytime
+          Your own cloud native application developer at a fraction of the cost.
         </h3>
         <a href="#welcome" className="z-10">
           <MoveDown strokeWidth={2} size={64} className="animate-bounce text-white drop-shadow-md"/>
@@ -210,9 +209,7 @@ export default function Home() {
 
       </section>
 
-      <section id="welcome" className="h-20"></section> 
-
-      <section className="relative overflow-x-hidden flex flex-col mt-8 md:mt-[-40px] md:space-y-16 lg:space-y-4 items-center justify-center w-full min-h-screen basis-auto">
+      <section className="bg-gradient-to-tl to-blue-700 from-sky-500 relative overflow-x-hidden flex flex-col mt-8 md:mt-[-40px] md:space-y-16 lg:space-y-4 items-center justify-center w-full min-h-screen basis-auto">
 
         {/*
         <Image className="invisible md:visible absolute top-[3rem] md:top-[0rem] lg:top-[-6rem] left-[-6rem] md:left-[-20rem] w-[3000px] z-0"
