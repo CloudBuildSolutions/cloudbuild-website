@@ -39,11 +39,11 @@ export const IconBlock = (props: IconBlockProps) => {
   let title = (props.title != undefined) ? 
                 <h4 className="text-3xl font-extrabold">{props.title}</h4> : "";
   let label = (props.label != undefined) ? 
-                <p className="text-lg font-bold">{props.label}</p> : "";
+                <p className="text-lg">{props.label}</p> : "";
 
   if (props.title == undefined) {
     label = (props.label != undefined) ? 
-            <p className="text-2xl font-bold">{props.label}</p> : "";
+            <p className="text-xl">{props.label}</p> : "";
   }
 
   switch (props.icon) {

@@ -1,4 +1,16 @@
-import { Tenor_Sans, Inter } from "next/font/google";
+import { 
+  Tenor_Sans, 
+  Inter,
+  IBM_Plex_Sans_KR,
+  Noto_Sans_Batak,
+  Gabarito
+} from "next/font/google";
+
+export const gabaritoFont = Gabarito({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap'
+});
 
 export const tenorFont = Tenor_Sans({
   subsets: ['latin'],
