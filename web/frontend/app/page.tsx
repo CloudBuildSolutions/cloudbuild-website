@@ -338,12 +338,12 @@ export default function Home() {
 
           <Card className="w-72 md:w-60 lg:w-72">
             <CardHeader>
-              <CardTitle className="text-center text-3xl">Architect</CardTitle>
-              <CardDescription className="text-center text-xl">$1,500/m</CardDescription>
+              <CardTitle className="text-center text-3xl">Architecture</CardTitle>
+              <CardDescription className="text-center text-xl">$2,500/m</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col space-y-4">
               <Button asChild className="bg-blue-500 hover:bg-blue-700">
-                <a href="https://buy.stripe.com/bIY6qy2ou0yscWk5ks">Subscribe</a>
+                <a href="https://buy.stripe.com/cN2g18bZ42GAaOc28j">Subscribe</a>
               </Button> 
               <a className="w-full text-center underline text-blue-500" 
                  href="https://calendly.com/cloudbuild/intro">
@@ -367,11 +367,11 @@ export default function Home() {
           <Card className="w-72 md:w-60 lg:w-72">
             <CardHeader>
               <CardTitle className="text-center text-3xl">Prototype</CardTitle>
-              <CardDescription className="text-center text-xl">$3,000/m</CardDescription>
+              <CardDescription className="text-center text-xl">$5,000/m</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col space-y-4">
               <Button asChild className="bg-blue-500 hover:bg-blue-700">
-                <a href="https://buy.stripe.com/eVabKSgfk3KE6xWfZ5">Subscribe</a>
+                <a href="https://buy.stripe.com/6oEdT02ou4OI2hG7sE">Subscribe</a>
               </Button> 
               <a className="w-full text-center underline text-blue-500" 
                  href="https://calendly.com/cloudbuild/intro">
@@ -395,11 +395,11 @@ export default function Home() {
           <Card className="w-72 md:w-60 lg:w-72">
             <CardHeader>
               <CardTitle className="text-center text-3xl">Production</CardTitle>
-              <CardDescription className="text-center text-xl">$6,000/m</CardDescription>
+              <CardDescription className="text-center text-xl">$7,500/m</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col space-y-4">
               <Button asChild className="bg-blue-500 hover:bg-blue-700">
-                <a href="https://buy.stripe.com/bIY5mud3880U1dC5kt">Subscribe</a>
+                <a href="https://buy.stripe.com/eVa02a6EKa9209ycMW">Subscribe</a>
               </Button> 
               <a className="w-full text-center underline text-blue-500" 
                  href="https://calendly.com/cloudbuild/intro">
